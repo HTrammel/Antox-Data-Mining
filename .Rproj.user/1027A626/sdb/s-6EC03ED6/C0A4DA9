@@ -1,0 +1,18 @@
+{
+    "contents" : "# --------------------------------\n# Antox Data Mining\n#\n# Starting with csv extract for now\n# Business questions:\n# - are there any predictors around grape intoxication\n#\n# --------------------------------\nrequire(dplyr)\nrequire(tidyr)\n\nsource(\"myplclust.R\")\n\n# get the data\ngrapes <- read.table(\"./data/grapes.txt\", header=T, sep = \"|\", na.strings = \"\")\n\n# change vectors to characters\n#grapes$finding <- as.character(grapes$finding)\n#grapes$finding_status <- as.character(grapes$finding_status)\n\n# create a new column with finding and status pasted together\ngrapes$finding.status <- with(grapes, paste(finding, status, sep = \".\"))\n\n# ag <- count(grapes, animal_group)\n# fs <- count(grapes, finding.status)\n# fnd <- count(grapes, finding)\n\ngrapes <-transform(grapes, finding.status = factor(finding.status))\n\n# cats <- subset(grapes, animal_group == \"Feline Domestic\")\n# distanceMatrix <- dist(cats[,1:2])\n# hclustering <- hclust(distanceMatrix)\n# myplclust(hclustering, lab.col = unclass(cats$finding))\n\ndogs <- subset(grapes, anim_group == \"Canine Domestic\")\ndistanceMatrix <- dist(dogs[,1:2])\nhclustering <- hclust(distanceMatrix)\nmyplclust(hclustering, lab.col = unclass(dogs$finding))\n",
+    "created" : 1432762565898.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3166154142",
+    "id" : "C0A4DA9",
+    "lastKnownWriteTime" : 1432849772,
+    "path" : "C:/Users/hlt/GitHub/Antox Data Mining/grapes_explore.R",
+    "project_path" : "grapes_explore.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 0,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

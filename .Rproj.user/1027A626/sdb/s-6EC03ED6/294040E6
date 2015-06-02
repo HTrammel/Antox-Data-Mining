@@ -1,0 +1,18 @@
+{
+    "contents" : "#-------------------------------------\n# DB2 database connection test script\n#  Use the RJDBC packaage\n# ------------------------------------\nSys.setenv(JAVA_HOME='C:\\\\Java\\\\jre8-64b')\n\nrequire(DBI)\nrequire(rJava)\nrequire(RJDBC)\n\njcc = JDBC(\"com.ibm.db2.jcc.DB2Driver\",\"c:/ibm/SQLLIB/java/db2jcc4.jar\")\n\nconn = dbConnect(jcc,\n                 \"jdbc:db2://aspcamwomr2p:50000/ANTOXMRR\",\n                 user=\"db2user\",\n                 password=\"TPpfasia\")\n\nrs = dbSendQuery(conn, \"select count(*) from medrec.caserec\")\ndf = fetch(rs, -1)",
+    "created" : 1433190449720.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1359441017",
+    "id" : "294040E6",
+    "lastKnownWriteTime" : 1433194910,
+    "path" : "C:/Users/hlt/GitHub/Antox Data Mining/db2_test.R",
+    "project_path" : "db2_test.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

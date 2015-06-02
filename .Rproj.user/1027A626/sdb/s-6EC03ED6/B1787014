@@ -1,0 +1,18 @@
+{
+    "contents" : "---\ntitle: \"Substance_Signs.R\"\nauthor: \"Harold Trammel\"\ndate: \"Thursday, May 28, 2015\"\noutput: html_document\n---\n\nOne of the goals of the Antox System is to help identify trends in animal poisoning.  This includes both recognizing new risks and characterizing known toxicants more clearly.  This particular set of explorations is looking at grapes and raisins and the clinical problems they cause.  The following are some questions that I hope to answer.  While these are stated as specific to grapes and raisins, I hope the work can become more generic.\n\n* Is any one species (animal group) more sensative than another?  If so, which one(s)?\n* Are any breeds within a sensative species (animal group) particularly sensative?\n* Is there a toxidrome, i.e. a collection of clinical findings that characterize the problems seen?\n\n",
+    "created" : 1432823806394.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1252304711",
+    "id" : "B1787014",
+    "lastKnownWriteTime" : 1432826602,
+    "path" : "C:/Users/hlt/GitHub/Antox Data Mining/Substance_Signs.md",
+    "project_path" : "Substance_Signs.md",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 0,
+    "source_on_save" : false,
+    "type" : "markdown"
+}

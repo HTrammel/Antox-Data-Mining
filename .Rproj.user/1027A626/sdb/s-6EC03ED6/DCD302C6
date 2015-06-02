@@ -1,0 +1,23 @@
+{
+    "contents" : "",
+    "created" : 1432828267242.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DCD302C6",
+    "lastKnownWriteTime" : 1,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "fnd",
+        "contentUrl" : "content?title=fnd&file=ee6ad4579a5c4579be37d0b969ecabde.htm",
+        "displayedObservations" : 380,
+        "displayedVariables" : 2,
+        "totalObservations" : 380,
+        "variables" : 2
+    },
+    "relative_order" : 0,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

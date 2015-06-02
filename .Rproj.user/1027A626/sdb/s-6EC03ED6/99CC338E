@@ -1,0 +1,18 @@
+{
+    "contents" : "myplclust <- function( hclust, lab=hclust$labels, lab.col=rep(1,length(hclust$labels)), hang=0.1,...){\n    ## modifiction of plclust for plotting hclust objects *in colour*!\n    ## Copyright Eva KF Chan 2009\n    ## Arguments:\n    ##    hclust:    hclust object\n    ##    lab:        a character vector of labels of the leaves of the tree\n    ##    lab.col:    colour for the labels; NA=default device foreground colour\n    ##    hang:     as in hclust & plclust\n    ## Side effect:\n    ##    A display of hierarchical cluster with coloured leaf labels.\n    y <- rep(hclust$height,2)\n    x <- as.numeric(hclust$merge)\n    y <- y[which(x<0)]\n    x <- x[which(x<0)]\n    x <- abs(x)\n    y <- y[order(x)]\n    x <- x[order(x)]\n    plot( hclust, labels=FALSE, hang=hang, ... )\n    text( x=x, y=y[hclust$order]-(max(hclust$height)*hang), labels=lab[hclust$order], col=lab.col[hclust$order], srt=90, adj=c(1,0.5), xpd=NA, ... )}\n",
+    "created" : 1432829551633.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "102573759",
+    "id" : "99CC338E",
+    "lastKnownWriteTime" : 1432829566,
+    "path" : "C:/Users/hlt/GitHub/Antox Data Mining/myplclust.R",
+    "project_path" : "myplclust.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 0,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
